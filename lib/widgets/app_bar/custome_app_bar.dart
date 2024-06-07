@@ -8,7 +8,7 @@ class CustomeAppBarPage extends StatelessWidget {
     // ignore: prefer_const_constructors
     return Row(
       children: [
-        Text("NI30", style: Theme.of(context).textTheme.headlineMedium,),
+        Text("paste tag line", style: Theme.of(context).textTheme.headlineMedium,),
       ],
     );
   }
