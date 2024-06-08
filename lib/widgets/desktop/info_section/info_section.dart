@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/assets_path.dart';
 
-import '../buttons/primary_button.dart';
+import '../../buttons/primary_button.dart';
 
 class InfoSectionPage extends StatelessWidget {
   const InfoSectionPage({super.key});
@@ -41,7 +41,7 @@ class InfoSectionPage extends StatelessWidget {
           Expanded(
             child: Column(
               children: [
-                Image.asset(ImagePathClass.profile, width: 200,),
+                Image.asset(ImagePathClass.profilePhoto, width: 200,),
               ]
             ),
           ),
