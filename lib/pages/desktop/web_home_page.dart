@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/widgets/app_bar/custome_app_bar.dart';
 
+import '../../widgets/info_section/info_section.dart';
+
 class WebHomePage extends StatelessWidget {
   const WebHomePage({super.key});
 
@@ -11,9 +13,15 @@ class WebHomePage extends StatelessWidget {
         padding: EdgeInsets.all(30.0),
         child: Column(
         children: [
-        CustomeAppBarPage()
-             ],
-            ),
+        CustomeAppBarPage(),
+        SizedBox(height: 30,),
+        InfoSectionPage(),
+         
+
+
+      
+        ],
+           ),
       ),
     );
   }
