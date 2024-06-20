@@ -31,7 +31,7 @@ class MyProgracessIndicator extends StatelessWidget {
           progressColor: Theme.of(context).colorScheme.primary,
         ),
         const SizedBox(height: 10),
-        Text(skillName),
+        Text(skillName, style: Theme.of(context).textTheme.bodySmall,),
       ],
     );
   }

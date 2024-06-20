@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'package:portfolio/widgets/desktop/app_bar/custome_app_bar.dart';
 
-import '../../widgets/desktop/experience/experience_section.dart';
 import '../../widgets/desktop/footer/footer.dart';
 import '../../widgets/desktop/info_section/info_section.dart';
 import '../../widgets/desktop/knowledge_section/knowledge_section.dart';
 import '../../widgets/desktop/services_section/my_services.dart';
 import '../../widgets/desktop/skill_section/skill_section.dart';
+import '../../widgets/mobile/experience/experience_section.dart';
 
 class WebHomePage extends StatelessWidget {
   const WebHomePage({super.key});

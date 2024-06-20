@@ -14,19 +14,24 @@ class PrimaryButton extends StatelessWidget {
         builder: (isHover) => Container(
           padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 5),
           decoration: BoxDecoration(
+
+            borderRadius: BorderRadius.circular(26),
+
               color: isHover
                   ? Theme.of(context).colorScheme.primary.withOpacity(0.2)
-                  : Colors.transparent, 
+                  : Theme.of(context).colorScheme.primary, 
               border: Border.all(
                 width: 2,
                 color: Theme.of(context).colorScheme.primary,
               )),
+
+              
           child: AnimatedDefaultTextStyle(
             duration: const Duration(milliseconds: 100),
             curve: Curves.easeInOut,
             style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                       letterSpacing: isHover ? 2.0 : 1.0,
-                      color: Theme.of(context).colorScheme.primary,
+                      color: Colors.white,
                     ) ??
                 const TextStyle(),
             child: Text(btnName),

@@ -48,23 +48,23 @@ class InternshipWidget extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 10),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(position),
-            Icon(
-              Icons.payment,
-              size: 60,
-              color: Theme.of(context).colorScheme.primaryContainer,
-            ),
-          ],
-        ),
-        Row(
-          children: [
-            Text(company, style: Theme.of(context).textTheme.labelMedium),
-          ],
-        ),
+        // const SizedBox(height: 10),
+        // Row(
+        //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        //   children: [
+        //     Text(position),
+        //     Icon(
+        //       Icons.payment,
+        //       size: 60,
+        //       color: Theme.of(context).colorScheme.primaryContainer,
+        //     ),
+        //   ],
+        // ),
+        // Row(
+        //   children: [
+        //     Text(company, style: Theme.of(context).textTheme.labelMedium),
+        //   ],
+        // ),
         const SizedBox(height: 10),
         Row(
           children: [
@@ -78,7 +78,7 @@ class InternshipWidget extends StatelessWidget {
         Row(
           children: [
             MyTextButton(
-              btnName: "RECOMENDATION >",
+              btnName: "Certificate >",
               onTap: () {},
             ),
           ],

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../Desktop/knowledge_section/field_circle.dart';
 import '../../buttons/my_text_button.dart';
-import '../knowledge_section/field_circle.dart';
 
 
 class ProjectWidget extends StatelessWidget {
@@ -16,11 +16,14 @@ class ProjectWidget extends StatelessWidget {
   final String linkedin;
   final VoidCallback onTap;
   final bool isActive;
+  
+
   const ProjectWidget(
       {super.key,
       required this.onTap,
       this.isActive = false,
       required this.date,
+       
       required this.projectTitle,
       required this.langauges,
       required this.features,
@@ -60,6 +63,7 @@ class ProjectWidget extends StatelessWidget {
         const SizedBox(height: 10),
         Row(
           children: [
+            
             Text(projectTitle),
           ],
         ),

@@ -9,6 +9,9 @@ class LanguageKnowledge extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    final mq = MediaQuery.of(context).size;
+
     return Column(
       children: [
         Row(
@@ -22,58 +25,48 @@ class LanguageKnowledge extends StatelessWidget {
           ],
         ),
         const SizedBox(height: 30),
-        const Column(
+         Column(
           children: [
-            Row(
+            const Row(
               children: [
-                Text('ENGLISH'),
+                Text('English'),
               ],
             ),
-            SizedBox(height: 20),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            SizedBox(height: mq.height * 0.020),
+             Row(
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: false),
-                FiledCircle(isFilled: false),
-                FiledCircle(isFilled: false),
+                const FiledCircle(isFilled: true),
+                SizedBox(width: mq.width * 0.045,),
+                const FiledCircle(isFilled: true),
+               
               ],
             )
           ],
         ),
-        const SizedBox(height: 30),
-        const Column(
+         SizedBox(height: mq.height * 0.030),
+         Column(
           children: [
-            Row(
+            const Row(
               children: [
-                Text('HINDI'),
+                Text('Hindi'),
               ],
             ),
-            SizedBox(height: 20),
+             SizedBox(height: mq.height * 0.020),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: true),
-                FiledCircle(isFilled: false),
+                const FiledCircle(isFilled: true),
+                SizedBox(width: mq.width * 0.045,),
+                const FiledCircle(isFilled: true),
+                SizedBox(width: mq.width * 0.045,),
+                const FiledCircle(isFilled: true),
+                
               ],
             )
           ],
         ),
-        const SizedBox(height: 30),
+         SizedBox(height: mq.height * 0.030),
         Row(
           // mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
@@ -81,38 +74,40 @@ class LanguageKnowledge extends StatelessWidget {
               "Hobby",
               style: Theme.of(context).textTheme.bodyLarge,
             ),
-            const SizedBox()
+           // const SizedBox()
           ],
         ),
-        const SizedBox(height: 20),
-        const Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+       SizedBox(height: mq.height * 0.020),
+         Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Row(children: [
-              FiledCircle(isFilled: true),
-              SizedBox(width: 20),
-              Text("Video Game")
+              const FiledCircle(isFilled: true),
+              SizedBox(width: mq.width * 0.020),
+              const Text("Video Game")
             ]),
             Row(children: [
-              FiledCircle(isFilled: true),
-              SizedBox(width: 20),
-              Text("Learn New Tech")
+              const FiledCircle(isFilled: true),
+              SizedBox(width: mq.width * 0.020),
+              const Text("Learn New Tech"),
+
+              
             ]),
           ],
         ),
-        const SizedBox(height: 20),
-        const Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+         SizedBox(height: mq.width * 0.020),
+         Row(
+         mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Row(children: [
-              FiledCircle(isFilled: true),
-              SizedBox(width: 20),
-              Text("Coding")
+              const FiledCircle(isFilled: true),
+              SizedBox(width: mq.width * 0.020),
+              const Text("Coding")
             ]),
             Row(children: [
-              FiledCircle(isFilled: true),
-              SizedBox(width: 20),
-              Text("Meet New People")
+              const FiledCircle(isFilled: true),
+              SizedBox(width: mq.width * 0.020),
+              const Text("Meet New People")
             ]),
           ],
         )

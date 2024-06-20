@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../../../constants/assets_path.dart';
+import 'package:portfolio/widgets/content/intro_content.dart';
 import '../../buttons/primary_button.dart';
 
 class MobileInfoSectionPage extends StatelessWidget {
@@ -8,21 +7,25 @@ class MobileInfoSectionPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
+    final mq = MediaQuery.of(context).size;
+    
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+      padding: EdgeInsets.symmetric(horizontal: mq.width  * 0.060, vertical: mq.height * 0.040),
       child: Column(
         children: [
-          Image.asset(
-            ImagePathClass.profile,
-            width: 150,
+          const CircleAvatar(
+          backgroundImage: AssetImage("assets/images/profile_photo.jpg"),
+           radius: 70,
           ),
+         SizedBox(height: mq.height * 0.015),
           Text(
-            "Hello, I’m Naresh Kumar Software developer ",
+            introTitle,
             style: Theme.of(context).textTheme.bodyLarge,
           ),
           const SizedBox(height: 4),
           Text(
-            "I am Naresh Kumar i have Excellent skill of web development and android development. as well as i share my development experience with other learner by YouTube. ",
+            introDesc,
             style: Theme.of(context).textTheme.labelMedium,
           ),
           const SizedBox(height: 10),

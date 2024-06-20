@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class ServiceWidget extends StatelessWidget {
-  final IconData icon;
+  final IconData? icon;
   final String title;
   final String des;
+  final Widget? imageWid;
+
 
   const ServiceWidget(
-      {super.key, required this.icon, required this.title, required this.des});
+      {super.key,  this.icon, required this.title, required this.des, this.imageWid,});
 
   @override
   Widget build(BuildContext context) {
@@ -19,15 +21,17 @@ class ServiceWidget extends StatelessWidget {
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(100),
             border: Border.all(
-              width: 1,
+              width: 1.8,
               color: Theme.of(context).colorScheme.primary,
             ),
           ),
-          child: Icon(
-            icon,
-            size: 60,
-            color: Theme.of(context).colorScheme.primary,
-          ),
+          child: imageWid
+          
+          // Icon(
+          //   icon,
+          //   size: 60,
+          //   color: Theme.of(context).colorScheme.primary,
+          // ),
         ),
         const SizedBox(height: 10),
         Text(
@@ -39,7 +43,8 @@ class ServiceWidget extends StatelessWidget {
           des,
           style: Theme.of(context).textTheme.labelMedium,
         ),
-      ],
+        
+        ],
     );
   }
 }

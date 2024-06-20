@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/Widgets/Desktop/Experience/InternShip.dart';
-import 'package:portfolio/Widgets/Desktop/Experience/Projects.dart';
 
-import '../skill_section/horizontal_devider.dart';
+import '../../desktop/skill_section/horizontal_devider.dart';
+import 'internship.dart';
+import 'projects.dart';
 
 
 class ExperienceSection extends StatelessWidget {
@@ -27,7 +27,7 @@ class ExperienceSection extends StatelessWidget {
                 const SizedBox(width: 20),
                 HorizontalDivider(
                   height: 450,
-                  color: Theme.of(context).colorScheme.background,
+                  color: Theme.of(context).colorScheme.surface,
                 ),
                 const SizedBox(width: 20),
                 const Expanded(child: ProjectsData()),

@@ -1,13 +1,24 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/constants/assets_path.dart';
+import '../../content/intro_content.dart';
 import '../../desktop/services_section/service_widget.dart';
+
 
 class MobileMyServicesSecPage extends StatelessWidget {
   const MobileMyServicesSecPage({super.key});
 
   @override
   Widget build(BuildContext context) {
+
+    final mq = MediaQuery.of(context).size;
+
     return Container(
-      color: Theme.of(context).colorScheme.primaryContainer,
+      margin: const EdgeInsets.symmetric(horizontal: 16),
+      
+      decoration: BoxDecoration(
+        color: Theme.of(context).colorScheme.primaryContainer,
+         borderRadius: BorderRadius.circular(16),
+      ),
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Column(
@@ -16,69 +27,112 @@ class MobileMyServicesSecPage extends StatelessWidget {
               "My Services",
               style: Theme.of(context).textTheme.bodyLarge,
             ), 
-            const SizedBox(height: 50),
-            const Row(
+            SizedBox(height: mq.height * 0.040,),
+             Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Expanded(
                   child: ServiceWidget(
-                    title: "Front End",
-                    des:
-                        "I am Nitish Kumar i have Excellent skill of web development and android development.  learner by YouTube. ",
-                    icon: Icons.design_services,
+                   imageWid: CircleAvatar(
+                  backgroundImage: AssetImage(ImagePathClass.frontend),
+               ),
+
+                    title: frontendTitle,
+                    des: frontendDesc,
+                        
+                  //  icon: Icons.design_services,
                   ),
                 ),
+                const SizedBox(width: 20),
                 Expanded(
                   child: ServiceWidget(
-                    title: "Front End",
-                    des:
-                        "I am Nitish Kumar i have Excellent skill of web development and android development.  learner by YouTube. ",
-                    icon: Icons.design_services,
+                    
+                   imageWid: CircleAvatar(
+                backgroundImage: AssetImage(ImagePathClass.backend),
+               ),
+                   title: backendTitle,
+                    des: backendDesc,
+                        
+                        //    icon: Icons.design_services,
                   ),
                 ),
+                
               ],
             ),
-            const SizedBox(height: 20),
-            const Row(
+
+            SizedBox(height: mq.height * 0.040,),
+             Row(
+             mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+
               children: [
                 Expanded(
                   child: ServiceWidget(
-                    title: "Front End",
-                    des:
-                        "I am Nitish Kumar i have Excellent skill of web development and android development.  learner by YouTube. ",
-                    icon: Icons.design_services,
+                    imageWid: CircleAvatar(
+                backgroundImage: AssetImage(ImagePathClass.android),
+               ),
+                    title: androidTitle,
+                    des: androidDesc,
+                       
+                  //  icon: Icons.design_services,
                   ),
                 ),
-                Expanded(
+                const SizedBox(width: 20),
+                 Expanded(
                   child: ServiceWidget(
-                    title: "Front End",
-                    des:
-                        "I am Nitish Kumar i have Excellent skill of web development and android development.  learner by YouTube. ",
-                    icon: Icons.design_services,
+                    imageWid: CircleAvatar(
+                 //     child: Image.asset(ImagePathClass.ios),
+                backgroundImage: AssetImage(ImagePathClass.ios),
+               ),
+                   title: iosTitle,
+                    des: iosDesc,
+                       
                   ),
                 ),
+                
               ],
             ),
-            const SizedBox(height: 20),
-            const Row(
+
+
+             SizedBox(height: mq.height * 0.040,),
+             Row(
+               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              
               children: [
                 Expanded(
                   child: ServiceWidget(
-                    title: "Front End",
-                    des:
-                        "I am Nitish Kumar i have Excellent skill of web development and android development.  learner by YouTube. ",
-                    icon: Icons.design_services,
+                    imageWid: CircleAvatar(
+                backgroundImage: AssetImage(ImagePathClass.web),
+               ),
+                    title: webTitle,
+                    des: webDesc,
+                      
+                  //  icon: Icons.design_services,
                   ),
                 ),
-                Expanded(
+                const SizedBox(width: 20),
+                 Expanded(
                   child: ServiceWidget(
-                    title: "Front End",
-                    des:
-                        "I am Nitish Kumar i have Excellent skill of web development and android development.  learner by YouTube. ",
-                    icon: Icons.design_services,
+                    imageWid: CircleAvatar(
+                 backgroundImage: AssetImage(ImagePathClass.learning),
+               ),
+                   title: learningTitle,
+                    des: learningDesc,
+                  
+                  //    icon: Icons.design_services,
                   ),
                 ),
+                
               ],
-            )
+            ),
+            
+        
+
+           
+            
+            
           ],
         ),
       ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 import 'horizontal_devider.dart';
-import 'programming_skills.dart';
-import 'software_skills.dart';
+import '../../mobile/myskills/programming_skills.dart';
+import '../../mobile/myskills/software_skills.dart';
 
 class SkillSectionPage extends StatelessWidget {
   const SkillSectionPage({super.key});
