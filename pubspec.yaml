@@ -83,11 +83,11 @@ flutter:
   fonts:
     - family: Console
       fonts:
-        - asset: assets/Fonts/Inconsolata-Regular.ttf
+        - asset: assets/fonts/Inconsolata-Regular.ttf
           weight: 400
-        - asset: assets/Fonts/Inconsolata-Medium.ttf
+        - asset: assets/fonts/Inconsolata-Medium.ttf
           weight: 500
-        - asset: assets/Fonts/Inconsolata-Bold.ttf
+        - asset: assets/fonts/Inconsolata-Bold.ttf
           weight: 700
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic

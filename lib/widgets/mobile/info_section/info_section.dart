@@ -3,6 +3,7 @@ import 'package:portfolio/widgets/content/intro_content.dart';
 import '../../buttons/primary_button.dart';
 
 class MobileInfoSectionPage extends StatelessWidget {
+   
   const MobileInfoSectionPage({super.key});
 
   @override
@@ -19,14 +20,14 @@ class MobileInfoSectionPage extends StatelessWidget {
            radius: 70,
           ),
          SizedBox(height: mq.height * 0.015),
-          Text(
+          const Text(
             introTitle,
-            style: Theme.of(context).textTheme.bodyLarge,
+            style: TextStyle(fontFamily: "Console"),
           ),
           const SizedBox(height: 4),
-          Text(
+          const Text(
             introDesc,
-            style: Theme.of(context).textTheme.labelMedium,
+             style: TextStyle(fontFamily: "Console"),
           ),
           const SizedBox(height: 10),
           Row(
