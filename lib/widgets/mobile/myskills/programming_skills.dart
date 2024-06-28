@@ -24,7 +24,7 @@ class ProgramingSkill extends StatelessWidget {
            // const SizedBox(width: 10,)
           ],
         ),
-        const SizedBox(height: 50),
+         SizedBox(height: mq.height * 0.030),
         const Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           

@@ -12,8 +12,11 @@ class SoftwareSkill extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 40),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Row(
+            mainAxisAlignment: MainAxisAlignment.start,
             // mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Text(
@@ -23,7 +26,7 @@ class SoftwareSkill extends StatelessWidget {
               const SizedBox()
             ],
           ),
-          const SizedBox(height: 50),
+           SizedBox(height: mq.height * 0.030),
           const MyLinearProgressInductor(
               skillName: "Android Studio", percent: 0.7, lable: "70"),
            SizedBox(height: mq.height * 0.030),

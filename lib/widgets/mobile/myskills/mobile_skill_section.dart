@@ -21,7 +21,7 @@ class MobileSkillSection extends StatelessWidget {
             "Skills",
             style: Theme.of(context).textTheme.bodyLarge,
           ),
-          SizedBox(height: mq.height * 0.070),
+          SizedBox(height: mq.height * 0.010),
           const ProgramingSkill(),
            SizedBox(height: mq.height * 0.050),
           Divider(

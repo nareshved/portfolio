@@ -1,4 +1,6 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
+
 import 'package:portfolio/widgets/content/intro_content.dart';
 import '../../buttons/primary_button.dart';
 
@@ -20,14 +22,20 @@ class MobileInfoSectionPage extends StatelessWidget {
            radius: 70,
           ),
          SizedBox(height: mq.height * 0.015),
-          const Text(
-            introTitle,
-            style: TextStyle(fontFamily: "Console"),
-          ),
+           Align(
+            alignment: Alignment.topLeft,
+             child: AnimatedTextKit(
+             repeatForever: true,
+              
+              animatedTexts: [
+                TyperAnimatedText(introTitle, textStyle: Theme.of(context).textTheme.bodyMedium)
+              ],
+                       ),
+           ),
           const SizedBox(height: 4),
-          const Text(
+           Text(
             introDesc,
-             style: TextStyle(fontFamily: "Console"),
+             style: Theme.of(context).textTheme.labelMedium
           ),
           const SizedBox(height: 10),
           Row(
@@ -36,7 +44,7 @@ class MobileInfoSectionPage extends StatelessWidget {
                 onTap: () {},
                 btnName: "Hire me",
               ),
-              const SizedBox(width: 20),
+               SizedBox(width: mq.width * 0.030),
               PrimaryButton(
                 onTap: () {},
                 btnName: "Get Resume",

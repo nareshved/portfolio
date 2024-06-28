@@ -9,10 +9,10 @@ final myDarkTheme = ThemeData(
   appBarTheme: const AppBarTheme(),
   colorScheme: const ColorScheme.dark(
     primary: primaryColor,
-    background: bgColor,
+    surface: bgColor,
     primaryContainer: containerColor,
     onPrimaryContainer: lableColor,
-    onBackground: fontColor,
+    onSurface: fontColor,
   ),
 
 
@@ -25,7 +25,7 @@ final myDarkTheme = ThemeData(
       fontSize: 34,
       fontFamily: "Console",
       color: fontColor,
-     // fontWeight: FontWeight.w700,
+      fontWeight: FontWeight.w700,
     ),
 
  
@@ -33,7 +33,7 @@ final myDarkTheme = ThemeData(
       fontSize: 24,
       fontFamily: "Console",
       color: fontColor,
-    // fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w700,
     ),
 
 
@@ -41,7 +41,7 @@ final myDarkTheme = ThemeData(
       fontSize: 20,
       fontFamily: "Console",
       color: fontColor,
-     // fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w400,
     ),
 
 
@@ -49,7 +49,7 @@ final myDarkTheme = ThemeData(
       fontSize: 18,
       fontFamily: "Console",
       color: fontColor,
-    //  fontWeight: FontWeight.w400,
+     fontWeight: FontWeight.w400,
     ),
 
 
@@ -57,7 +57,7 @@ final myDarkTheme = ThemeData(
       fontSize: 16,
       fontFamily: "Console",
       color: lableColor,
-     // fontWeight: FontWeight.w400,
+      fontWeight: FontWeight.w400,
     ),
   ),
 
